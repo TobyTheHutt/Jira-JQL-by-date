@@ -36,8 +36,8 @@ Note that the queries are written as you would paste them in the web query edito
 |Resolution changes|`jqlWhenResolutionChanged`|`(resolution CHANGED ON $startDate)`|
 |Unrestricted comments|`jqlWhenCommentedBasic`|`issueFunction IN commented("on $startDate")`|
 |Restricted comments to Administrators|`jqlWhenCommentedAdmin`|`issueFunction IN commented("on $startDate rolelevel \"Administrators\"")`|
-|Restricted comments to Developers|`jqlWhenCommentedDev`|```issueFunction IN commented(`"on $startDate rolelevel \`"Developers\`"`")```|
-|Restricted comments to Users|`jqlWhenCommentedUsers`|```issueFunction IN commented(`"on $startDate rolelevel \`"Users\`"`")```|
+|Restricted comments to Developers|`jqlWhenCommentedDev`|`issueFunction IN commented("on $startDate rolelevel \"Developers\"")`|
+|Restricted comments to Users|`jqlWhenCommentedUsers`|`issueFunction IN commented("on $startDate rolelevel \"Users\"")`|
 
 ### User filters (`jqlWho` prefix)
 |Usage|Key|Value|
